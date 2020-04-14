@@ -1,7 +1,7 @@
 # EdgeRouter Wireshark Remote Packet Capture
 Capture packets of an EdgeRouter interface and forward them to Wireshark over an SSH connection.
 
-[Project Site](https://github.com/Throdne/EdgerouterWiresharkRemoteCapture)
+[Project Site](https://github.com/Throdne/EdgerouterWiresharkRemotePacketCapture)
 
 ### Prerequisites:
 - [Wireshark](https://www.wireshark.org/) v3.2.3 or higher

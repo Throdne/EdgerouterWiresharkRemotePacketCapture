@@ -2,7 +2,7 @@
 
 # Author: Jerico Thomas
 # Email: Support@TekOp.net
-# Link: https://github.com/Throdne/EdgerouterWiresharkRemoteCapture
+# Link: https://github.com/Throdne/EdgerouterWiresharkRemotePacketCapture
 
 # init parameters
 USER=""
