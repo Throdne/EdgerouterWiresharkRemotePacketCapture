@@ -1,5 +1,5 @@
 # EdgeRouter Wireshark Remote Packet Capture
-Capture packets of an EdgeRouter interface and forward them to Wireshark over an SSH connection.
+Captures real time packets of an EdgeRouter interface and forwards them to Wireshark over an SSH connection.
 
 [Project Site](https://github.com/Throdne/EdgerouterWiresharkRemotePacketCapture)
 
@@ -23,10 +23,10 @@ __Server__: The IP or hostname of the EdgeRouter
 __SSH Port__ *(optional | default: 22)*: The listen port on the EdgeRouter. Use this if 22 is not the default listening port or if port forwarding is setup to another port. 
 
 `-i`
-__Interface__: The interface on the EdgeRouter you want to listen to. e.g eth0
+__Interface__: The interface on the EdgeRouter you want to listen to. e.g `eth0`
 
 `-f`
-__Filter__ *(optional)*: If you want to filter traffic before forwarding to Wireshark. Using this will reduce the bandwidth over the SSH connection. Use if you have limit connection speed. Filters will need to be inclosed in quotes `" "`. Also, the filter rules are tcpdump rules (not Wireshark)
+__Filter__ *(optional)*: If you want to filter traffic before forwarding to Wireshark. Using this will reduce the bandwidth over the SSH connection. Use if you have limit connection speed. Filters will need to be inclosed in quotes `" "`. Also, this parameter uses tcpdump syntax (not Wireshark's Syntax)
 - [tcpdump man pages](https://www.tcpdump.org/manpages/tcpdump.1.html)
 - [Helpful tcpdump rules](https://danielmiessler.com/study/tcpdump/)
 
