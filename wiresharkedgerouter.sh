@@ -56,7 +56,7 @@ else
     if [ ! -z "$FILTER" ]; then
         echo "Filter rules: $FILTER"
     fi
-    wireshark -k -i <(ssh $USER@$SERVER -p $PORT /usr/sbin/tcpdump -i $ETH $FILTER -U -w - )
+    /Applications/Wireshark.app/Contents/MacOS/Wireshark -k -i <(ssh $USER@$SERVER -p $PORT /usr/sbin/tcpdump -i $ETH $FILTER -U -w - )
     exit 0
 fi
 
